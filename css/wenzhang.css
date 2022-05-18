@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F1F5F8;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.center{
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.center .rightText{
+    width: 750px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.center .rightText .box{
+    width: 350px;
+    height: 420px;
+    margin-top: 40px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow:15px 1px 24px rgba(0, 0, 0, 0.05);
+    transition:  0.5s;
+}
+.center .rightText .box:hover{
+    transform: scale(1.03,1.03);
+    box-shadow:50px 50px 50px rgba(0, 0, 0, 0.05);
+
+}
+.center .rightText .box .image img{
+    width: 100%;
+    height: 200px;
+}
+.center .rightText .box .text{
+    margin-top: 20px;
+}
+.center .rightText .box .text .r{
+    margin:3px 20px;
+    display: inline;
+    float: right;
+}
+.center .rightText .box .text .l>a{
+    margin-left: 20px;
+    font-size: 1.2em;
+    color: #48A6E9;
+}
+.center .rightText .box .text .r>a{
+    color: gray;
+}
+.center .rightText .box .page {
+     margin: 20px 20px 0px 20px;
+}
+.center .rightText .box .page span .i{
+    text-align: center;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.center .rightText .box .page .l a,.center .rightText .box .page .r a{
+    color: #428DC4;
+}
+
+.center .rightText .box .page .l{
+    margin: 5px;
+    float: left;
+}
+.center .rightText .box .page .r{
+    margin: 5px;
+    float: right;
+
+}
+.center .rightText button{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #48A6E9;
+    color: white;
+    border: none;
+    position: relative;
+    top: 100px;
+    left: 1%;
+}
+.center .rightText .box .image span{
+    background-color: #428DC4;
+    font-size: 1.1em;
+    color: white;
+    position: relative;
+    top: -30px;
+    left: 65%;
+}
+
+.center .leftText{
+    width: 300px;
+    height: 100%;
+}
+.center .leftText .main{
+    display: flex;
+    flex-direction: column;
+}
+.center .leftText .main .search{
+    width: 380px;
+    height: 80px;
+    margin-top: 40px;
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow:50px 50px 50px rgba(0, 0, 0, 0.05);
+}
+.center .leftText .main .search input{
+    width: 250px;
+    height: 50px;
+    margin: 15px 0px 15px 15px;
+    border: none;
+    padding: 1px;
+    color: gray;
+    border-radius: 10px;
+    background-color: lightgray;
+    font-size: 1.5em;
+}
+
+.center .leftText .main .search button{
+    width: 100px;
+    height: 50px;
+    margin: 15px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #48A6E9;
+}
+
+.center .leftText .main .athur{
+    width: 380px;
+    height: 500px;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow:100px 100px 100px 100px rgba(0, 0, 0, 0.05);
+
+}
+.center .leftText .main .athur img{
+    width: 380px;
+    height: 300px;
+}
+
+.center .leftText .main .athur .text>h4{
+    margin: 10px;
+    text-align: center;
+}
+
+.center .leftText .main .athur .text>p{
+    margin: 10px 50px;
+    color: gray;
+
+}
+.center .leftText .main .populerPhotos{
+    width: 380px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-top: 40px;
+    box-shadow:50px 50px 50px 50px rgba(0, 0, 0, 0.05);
+
+}
+
+.Hr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.hr{
+    width: 100px;
+    height: 5px;
+    background-color: #48A6E9;
+    text-align: center;
+    border-radius: 10px;
+}
+.center .leftText .main .populerPhotos .box img{
+    width: 80px;
+    height: 50px;
+}
+.center .leftText .main .populerPhotos h2{
+    text-align: center;
+    margin: 20px;
+}
+.center .leftText .main .populerPhotos .box{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.center .leftText .main .populerPhotos .box span{
+    font-size: 0.7em;
+    color: gray;
+}

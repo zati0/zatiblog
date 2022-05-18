@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/navBottom.css">
+  <title>学码blog</title>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav>
+      <div class="Nav">
+      <ul>
+        <a href="#"><img src="./img/logoko.png" alt=""></a>
+        <li><a href="index.html">首页</a></li>|
+        <li><a href="wenzhang.html">文章</a></li>|
+        <li><a href="aboutMe.html">关于我</a></li>|
+      </ul>
+    </div>
+    <div class="search">
+      <input type="text" name="" id="search" placeholder="请输入搜索内容">
+      <a href="#"><i class="fa fa-search"></i></a>
+      <a href="./login.html">登录/注册</a>
+    </div>
+    </nav>
+    <script type="text/javascript">
+      //设置定时器
+      window.setInterval("changeImage()",2000);
+      var count =1;    //在调用函数的时候0.jpg已经显示，如果num=0，那么在执行下面函数时，0.jpg会再次显示2秒
+      //设置寻找图片的函数
+      function changeImage() {
+          var img = document.getElementById("img");//img对象就相当于img标签
+          if (count <= 3) {
+              img.src = "img/blog" + count + ".jpg";
+              count++;
+          }else {
+              count= 1;
+              changeImage();
+          }
+      }
+  </script>
+    <div class="banner">
+    <img src="img/blog1.jpg" id="img" width="600px" height="400px"/>
+    </div>
+    <!-- 顶部 -->
+    <div class="top">
+      <h1>学码blog</h1>
+      <img src="./img/logoko.png" alt="">
+      <p>热爱编程 = 热爱生活 </p>
+      <p>Hello World!</p>
+    </div>
+    <!-- 中部 -->
+    <div class="main">
+      <div class="Hr">
+        <h1 style="text-align:center ;margin-top:20px;">精选文章</h1>
+        <div class="hr"></div>
+    </div>
+      <div class="center">
+      <div class="articles">
+        <div class="image">
+          <img src="./img/1.png" alt="">
+        </div>
+        <div class="text">
+          <a href="1page.html">为什么想当程序员</a>
+          <p>
+            程序员普遍都有一种激情：希望自己做的产品，能为成千上万的用户使用。
+            这种职业的自豪感，激励着每一个程序员的创造力和想象力。 
+            
+          </p>
+          <span>作者:</span>
+          <span>zati</span>
+        </div>
+      </div>
+      <div class="articles">
+        <div class="image">
+          <img src="./img/2.png" alt="">
+        </div>
+        <div class="text">
+          <a href="2page.html">学习编程能干什么</a>
+          <p>
+            在知乎看过一个朋友的回答，讲了一个故事。小区里边很多小孩嘘嘘，
+            要大人不停吹口哨才拉的出来（额。。。），于是答主开发了一个APP
+           
+          </p>
+          <span>作者:</span>
+          <span>zati</span>
+        </div>
+      </div>
+      <div class="articles">
+        <div class="image">
+          <img src="./img/3.png" alt="">
+        </div>
+        <div class="text">
+          <a href="3page.html">程序语言是什么</a>
+          <p>
+            学习编程语言之前，首先要搞清楚“编程语言”这个概念。
+            很小的时候，父母就教我们开口说话，也教我们如何理解别人讲话的意思。
+            
+          </p>
+          <span>作者:</span>
+          <span>zati</span>
+        </div>
+      </div>
+      <div class="articles">
+        <div class="image">
+          <img src="./img/4.png" alt="">
+        </div>
+        <div class="text">
+          <a href="4page.html">网页设计是什么意思</a>
+          <p>
+            网页设计是一种视觉语言，特别讲究编排和布局，虽然主页的设计不等同于平面设计，
+            但它们有许多相近之处。版式设计通过文字图形的空间组合，表达出和谐与美。
+          </p>
+          <span>作者:</span>
+          <span>zati</span>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!-- 底部 -->
+    <div class="bottom">
+      <div class="Hr">
+        <h1 style="text-align:center ;margin-top:20px;">分类</h1>
+        <div class="hr"></div>
+    </div>
+      <div class="categories">
+        <div class="box">
+          <a href="#"><i class="fa fa-heart fa-4x"></i></a>
+          <h3>生活类</h3>
+          <p>
+            分享个人生活趣事，以及生活中遇到的问题
+          </p>
+        </div>
+        <div class="box">
+          <a href="#"><i class="fa fa-book fa-4x"></i></a>
+          <h3>期刊类</h3>
+          <p>
+            定时分享其他类文献，毕竟不能从早到晚写代码，给点时间放松放松
+          </p>
+        </div>
+        <div class="box">
+          <a href="#"><i class="fa fa-institution fa-4x"></i></a>
+          <h3>技术类</h3>
+          <p>
+            分享技术文献，一起学习，共同进步
+          </p>
+        </div>
+      </div>
+      <div class="photos">
+        <div class="Hr">
+          <h1 style="text-align:center ;margin-top:20px;">精美照片</h1>
+          <div class="hr"></div>
+      </div>
+        <img src="./img/blog2.jpg" alt="" class="one">
+        <img src="./img/blog1.jpg" alt="" class="two">
+        <img src="./img/slide1.jpg" alt="" class="three">
+        <img src="./img/blog3.jpg" alt="" class="three">
+      </div>
+      <div class="pinglun">
+        <h2 style="font-size: 2em;">想要最新的帖子信息和更新吗？</h2>
+        <div>
+          <input type="text" name="" id="" value="请输入邮箱">
+          <button>提交</button>
+        </div>
+      </div>
+      <div class="bottomText">
+      <div class="icon">
+        <a href="#"><i class="fa fa-weixin fa-2x"></i></a>
+        <a href="#"><i class="fa fa-weibo fa-2x"></i></a>
+        <a href="#"><i class="fa fa-qq fa-2x"></i></a>
+        <a href="#"><i class="fa fa-github fa-2x"></i></a>
+      </div>
+      <div class="copy">
+        <span>&copy zati. All rights reserved.</span>
+      </div>
+    </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
